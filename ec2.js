@@ -7,6 +7,7 @@
 // Requires jsbn.js, jsbn2.js, rng.js and ec.js
 // http://www-cs-students.stanford.edu/~tjw/jsbn/
 
+
 ECCurveFp.prototype.decodePointHex = function(s)
 {
 	var yIsEven;
@@ -63,7 +64,6 @@ ECCurveFp.prototype.encodeCompressedPointHex = function(p)
 }
 
 
-
 ECFieldElementFp.prototype.getR = function()
 {
 	if(this.r != undefined) return this.r;
@@ -84,7 +84,6 @@ ECFieldElementFp.prototype.modMult = function(x1,x2)
 {
     return this.modReduce(x1.multiply(x2));
 }
-
 ECFieldElementFp.prototype.modReduce = function(x)
 {
     if (this.getR() != null)
@@ -169,7 +168,6 @@ ECFieldElementFp.prototype.sqrt = function()
 
     return null;
 }
-
 ECFieldElementFp.prototype.lucasSequence = function(P,Q,k)
 {
     var n = k.bitLength();
