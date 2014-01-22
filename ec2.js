@@ -4,7 +4,7 @@
 // Ported loosely from BouncyCastle's Java EC code
 // like the original JSBN.
 
-// Requires jsbn.js, jsbn2.js and ec.js
+// Requires jsbn.js, jsbn2.js, rng.js and ec.js
 // http://www-cs-students.stanford.edu/~tjw/jsbn/
 
 ECCurveFp.prototype.decodePointHex = function(s)
